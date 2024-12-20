@@ -18,20 +18,15 @@ Education
 
 Work experience
 ======
-  
-Skills
-======
+* Computer Scientist, SRI Computer Vision Technology Group, Princeton Junction, USA, Sep 2016 – Aug 2017
+* Student Research Associate, SRI Computer Vision Technology Group, Princeton Junction, USA, May 2016 – Aug 2016  
+* Professional Intern, BMW AG, Munich, Germany, July 2014 – Aug 2014
+* Undergraduate Engineer, Dynamic Load Monitoring, Southampton, UK, Aug 2011 – Jul 2012
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
 Teaching
