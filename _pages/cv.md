@@ -29,11 +29,8 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Teaching
+Workshop Organization
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
+* Novel Approaches for Precision Agriculture and Forestry with Autonomous Robots, ICRA 2025
+* Perception and Control for fast and agile Super-Vehicles, RSS 2020
+* Perception and Control for fast and agile Super-Vehicles, RSS 2019
