@@ -23,7 +23,11 @@ def format_citation(pub):
     bib = pub.get('bib', {})
     authors = bib.get('author', '')
     title = bib.get('title', '')
-    venue = bib.get('venue', '')
+    venue = bib.get('citation', '')
+    if venue == '':
+        venue = bib.get('conference', '')
+    if venue == '':
+        venue = bib.get('journal', '')
     year = bib.get('pub_year', '')
     citation = f"{authors} \"{title}.\" {venue}, {year}."
     return citation
@@ -32,7 +36,12 @@ def format_citation(pub):
 def create_markdown(pub, outdir):
     bib = pub.get('bib', {})
     title = bib.get('title', 'No title')
-    venue = bib.get('venue', '')
+    venue = bib.get('citation', '')
+    if venue == '':
+        venue = bib.get('conference', '')
+    if venue == '':
+        venue = bib.get('journal', '')
+
     year = bib.get('pub_year', '1900')
     date = f"{year}-01-01"
     slug = slugify(title)
